@@ -22,7 +22,8 @@ on:
 
 jobs:
   analyze:
-    name: Analyze
+    name: A
+   Warith Akbar
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -30,7 +31,7 @@ jobs:
       security-events: write
 
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         language: [ 'javascript' ]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
@@ -38,7 +39,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
